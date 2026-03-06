@@ -1,0 +1,35 @@
+{
+  "challenge": "component-io",
+  "type": "bughunt",
+  "total_bugs": 4,
+  "bugs": [
+    {
+      "id": "BUG-1",
+      "title": "Produktkarten zeigen keine Daten an",
+      "symptom": "Die Produktkarten werden gerendert, aber Titel, Preis und Beschreibung sind leer oder es erscheint ein Fehler in der Konsole.",
+      "hint_if_not_found": "Vergleiche, was der Parent an das Child übergibt, mit dem was das Child erwartet.",
+      "category": "Input-Binding"
+    },
+    {
+      "id": "BUG-2",
+      "title": "Like-Button reagiert nicht",
+      "symptom": "Ein Klick auf den Like-Button in einer Produktkarte hat keinen sichtbaren Effekt — die Like-Anzahl ändert sich nicht.",
+      "hint_if_not_found": "Prüfe den gesamten Weg eines Events: Wird es ausgelöst? Wird es empfangen? Stimmen die Namen überein?",
+      "category": "Output-Event"
+    },
+    {
+      "id": "BUG-3",
+      "title": "Fehlermeldung in der Konsole beim Rendern der Liste",
+      "symptom": "In der Browser-Konsole erscheint ein Fehler, der mit der Produktliste zusammenhängt. Die Liste wird möglicherweise gar nicht oder fehlerhaft gerendert.",
+      "hint_if_not_found": "Angular braucht einen eindeutigen Schlüssel für jedes Element in einer Liste. Existiert das referenzierte Feld wirklich?",
+      "category": "Control Flow"
+    },
+    {
+      "id": "BUG-4",
+      "title": "Leere-Seite-Meldung obwohl Produkte vorhanden sind",
+      "symptom": "Die App zeigt 'Keine Produkte vorhanden' an, obwohl im Code eindeutig Produkte definiert sind.",
+      "hint_if_not_found": "Wann wird eine Bedingung wahr und wann falsch? Lies die Logik im Template nochmals genau.",
+      "category": "Control Flow"
+    }
+  ]
+}
