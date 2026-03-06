@@ -11,6 +11,22 @@
 
 Du hast gerade als "Senior Developer" bei einem Startup angefangen. Der bisherige Entwickler hat den Code funktional geschrieben — aber mit vielen Redundanzen. Dein Auftrag: Den Code **DRY** (Don't Repeat Yourself) machen, ohne die Funktionalität zu ändern.
 
+## Setup
+
+```bash
+npm install
+```
+
+## Validierung
+
+Prüfe nach jedem Refactoring-Schritt, ob der Code weiterhin kompiliert:
+
+```bash
+npm run check
+```
+
+Keine Fehler = dein Refactoring ist korrekt. Die Funktionalität hat sich nicht verändert.
+
 ## Aufgabe
 
 Öffne `messy-code.ts` und refaktoriere den Code mit folgenden TypeScript-Features:
