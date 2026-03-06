@@ -1,0 +1,12 @@
+{
+  "name": "senior-refactoring",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Senior Refactoring Challenge — Make messy TypeScript DRY with Utility Types",
+  "scripts": {
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "~5.8.0"
+  }
+}

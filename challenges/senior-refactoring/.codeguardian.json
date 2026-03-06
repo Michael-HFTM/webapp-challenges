@@ -1,0 +1,42 @@
+{
+  "challenge": "senior-refactoring",
+  "type": "refactoring",
+  "total_bugs": 5,
+  "bugs": [
+    {
+      "id": "REFACTOR-1",
+      "title": "Vorschau-Typ enthält manuell kopierte Properties",
+      "symptom": "Ein Typ für die Vorschau-Ansicht enthält Properties, die bereits in einem anderen Typ definiert sind — Wort für Wort identisch.",
+      "hint_if_not_found": "Welche Typen sehen aus wie ein Ausschnitt eines grösseren Typs?",
+      "category": "Duplizierte Properties"
+    },
+    {
+      "id": "REFACTOR-2",
+      "title": "Typ wiederholt die meisten Properties eines anderen Typs",
+      "symptom": "Ein Typ definiert fast die gleichen Properties wie ein anderer Typ — bloss ein paar fehlen.",
+      "hint_if_not_found": "Vergleiche die Typen: Welcher ist eine Teilmenge eines anderen?",
+      "category": "Duplizierte Properties"
+    },
+    {
+      "id": "REFACTOR-3",
+      "title": "Zwei Typen sind fast identisch — einer mit optionalen Properties",
+      "symptom": "Zwei Typen haben exakt die gleichen Properties, aber bei einem steht überall ein Fragezeichen.",
+      "hint_if_not_found": "Kann ein Typ vom anderen abgeleitet werden, statt alles nochmal zu schreiben?",
+      "category": "Duplizierte Properties"
+    },
+    {
+      "id": "REFACTOR-4",
+      "title": "Typ und Objekt enthalten die gleichen Strings",
+      "symptom": "Ein Typ listet String-Werte auf, die auch als Keys in einem bestehenden Objekt vorkommen — doppelte Pflege nötig.",
+      "hint_if_not_found": "Könnte der Typ aus dem Objekt abgeleitet werden, statt die Werte separat zu pflegen?",
+      "category": "Doppelte Pflege"
+    },
+    {
+      "id": "REFACTOR-5",
+      "title": "Gleicher Objekt-Typ wird mehrfach ausgeschrieben",
+      "symptom": "Derselbe ausführliche Objekt-Typ taucht an mehreren Stellen auf — bei jeder Änderung müssten alle Stellen angepasst werden.",
+      "hint_if_not_found": "Gibt es eine kompaktere Schreibweise, wenn alle Values den gleichen Typ haben?",
+      "category": "Doppelte Pflege"
+    }
+  ]
+}
