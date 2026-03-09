@@ -1,0 +1,41 @@
+@use '@angular/material' as mat;
+
+// ============================================================
+// Light Theme (aktiv)
+// ============================================================
+$light-theme: mat.define-theme((
+  color: (
+    theme-type: light,
+    primary: mat.$azure-palette,
+    tertiary: mat.$blue-palette,
+  ),
+));
+
+html {
+  @include mat.all-component-themes($light-theme);
+  color-scheme: light;
+}
+
+// ============================================================
+// TODO: Dark Theme hier definieren
+// ============================================================
+// Tipp 1: Erstelle eine $dark-theme Variable mit mat.define-theme()
+//         und setze theme-type auf 'dark'.
+//
+// Tipp 2: Aktiviere das Dark Theme über eine CSS-Klasse auf <html>,
+//         z.B. html.dark-theme { @include mat.all-component-colors(...); }
+//
+// Tipp 3: Vergiss nicht, auch color-scheme: dark zu setzen,
+//         damit der Browser native Elemente (Scrollbars etc.) anpasst.
+// ============================================================
+
+// ============================================================
+// Global Styles
+// ============================================================
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: var(--mat-app-background-color, #fafafa);
+  color: var(--mat-app-text-color, #212121);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
