@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": "prod-001",
+      "heading": "Angular Development Masterclass",
+      "price": "49.99",
+      "category": "Kurse",
+      "inStock": true
+    },
+    {
+      "id": "prod-002",
+      "heading": "TypeScript Handbook",
+      "price": "29.90",
+      "category": "Bücher",
+      "inStock": true
+    },
+    {
+      "id": "prod-003",
+      "heading": "Mechanical Keyboard Pro",
+      "price": "189.00",
+      "category": "Hardware",
+      "inStock": false
+    },
+    {
+      "id": "prod-004",
+      "heading": "Ultrawide Monitor 34\"",
+      "price": "599.00",
+      "category": "Hardware",
+      "inStock": true
+    },
+    {
+      "id": "prod-005",
+      "heading": "Clean Code Poster",
+      "price": "12.50",
+      "category": "Merchandise",
+      "inStock": true
+    }
+  ]
+}

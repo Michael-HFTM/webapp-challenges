@@ -1,0 +1,44 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "Angular Development Masterclass",
+      "price": 49.99,
+      "description": "Umfassender Kurs zu Angular 21 mit Standalone Components, Signals und Zoneless Change Detection.",
+      "category": "Kurse",
+      "inStock": true
+    },
+    {
+      "id": 2,
+      "title": "TypeScript Handbook",
+      "price": 29.90,
+      "description": "Das offizielle TypeScript Handbook mit Generics, Utility Types und Best Practices.",
+      "category": "Bücher",
+      "inStock": true
+    },
+    {
+      "id": 3,
+      "title": "Mechanical Keyboard Pro",
+      "price": 189.00,
+      "description": "Cherry MX Brown Switches, RGB Beleuchtung, USB-C Anschluss.",
+      "category": "Hardware",
+      "inStock": false
+    },
+    {
+      "id": 4,
+      "title": "Ultrawide Monitor 34\"",
+      "price": 599.00,
+      "description": "34 Zoll WQHD, 144Hz, IPS Panel, USB-C Hub, perfekt für Entwickler.",
+      "category": "Hardware",
+      "inStock": true
+    },
+    {
+      "id": 5,
+      "title": "Clean Code Poster",
+      "price": 12.50,
+      "description": "A2-Poster mit den wichtigsten Clean Code Prinzipien für dein Büro.",
+      "category": "Merchandise",
+      "inStock": true
+    }
+  ]
+}
