@@ -5,7 +5,7 @@
 **Kurstag:** 11 -- Responsive Design & Angular Security
 **Typ:** Homework + Kurzpräsentation (2--3 Min.)
 **Schwierigkeitsgrad:** ★★★ (Mittel bis Schwer)
-**Dauer:** ca. 60 Min. Homework + 2--3 Min. Präsentation im Unterricht
+**Dauer:** ca. 45 Min. Homework + 2--3 Min. Präsentation im Unterricht
 **Format:** Einzelarbeit oder Partnerarbeit
 
 ---
@@ -27,7 +27,7 @@ Die App läuft auf `http://localhost:4200`.
 
 Die App enthält **7 Sicherheitslücken** aus verschiedenen Kategorien. Deine Aufgabe:
 
-### Phase 1: Hacken (zu Hause, ca. 60 Min.)
+### Phase 1: Hacken (zu Hause, ca. 45 Min.)
 
 1. Starte die App und erkunde sie
 2. Finde so viele Sicherheitslücken wie möglich
