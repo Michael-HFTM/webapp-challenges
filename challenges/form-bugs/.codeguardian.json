@@ -1,0 +1,21 @@
+{
+  "challenge": "form-bugs",
+  "type": "bughunt",
+  "total_bugs": 2,
+  "bugs": [
+    {
+      "id": "BUG-1",
+      "title": "Formular lässt sich mit leeren Pflichtfeldern absenden",
+      "symptom": "Der Submit-Button ist aktiv, obwohl Pflichtfelder leer sind. Klick auf 'Registrieren' zeigt eine Erfolgsmeldung, obwohl nichts ausgefüllt wurde.",
+      "hint_if_not_found": "Schau dir die Bedingung genau an, die entscheidet, ob der Button aktiv oder deaktiviert ist. Stimmt die Logik?",
+      "category": "Formular-Validierung"
+    },
+    {
+      "id": "BUG-2",
+      "title": "Ungültige E-Mail-Adressen werden akzeptiert",
+      "symptom": "Eingaben wie 'abc' oder '123' werden im E-Mail-Feld ohne Fehlermeldung akzeptiert. Die E-Mail-Validierung scheint nicht zu funktionieren.",
+      "hint_if_not_found": "Welcher Validator prüft das E-Mail-Format? Und welcher Validator ist tatsächlich auf dem Feld aktiv? Sind das dieselben?",
+      "category": "Validator-Konfiguration"
+    }
+  ]
+}
