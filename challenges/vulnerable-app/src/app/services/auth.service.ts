@@ -1,9 +1,6 @@
 import { Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 
-// Vulnerability #6: JWT stored in localStorage (accessible via XSS)
-// Vulnerability #5: No expiry check on token
-
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private loggedIn = signal(!!localStorage.getItem('auth_token'));
@@ -19,14 +16,12 @@ export class AuthService {
         sub: '1',
         username: 'admin',
         role: 'admin',
-        // Token expired 30 days ago -- but we never check this!
-        exp: Math.floor(Date.now() / 1000) - (30 * 24 * 60 * 60),
-        iat: Math.floor(Date.now() / 1000) - (60 * 24 * 60 * 60),
+        exp: Math.floor(Date.now() / 1000) + (24 * 60 * 60),
+        iat: Math.floor(Date.now() / 1000),
       }));
       const signature = btoa('mock-signature-not-verified');
       const token = `${header}.${payload}.${signature}`;
 
-      // Store in localStorage -- not ideal for security
       localStorage.setItem('auth_token', token);
       this.loggedIn.set(true);
       return true;
@@ -41,7 +36,6 @@ export class AuthService {
   }
 
   isAuthenticated(): boolean {
-    // TODO: validate token properly
     return this.loggedIn();
   }
 
@@ -54,7 +48,6 @@ export class AuthService {
     if (!token) return null;
     try {
       const payload = JSON.parse(atob(token.split('.')[1]));
-      // We just decode and return -- no expiry check, no signature verification
       return { username: payload.username, role: payload.role };
     } catch {
       return null;

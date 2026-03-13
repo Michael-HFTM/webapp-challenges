@@ -66,9 +66,9 @@ Die 7 Schwachstellen verteilen sich auf diese Kategorien -- aber du musst selbst
 
 - **Cross-Site Scripting (XSS)** -- Kann ein Angreifer eigenen Code einschleusen?
 - **Authentication / Authorization** -- Sind alle Bereiche richtig geschützt?
-- **Token Handling** -- Wie wird das Login-Token gespeichert und geprüft?
+- **CSP / Defense-in-Depth** -- Schützen die vorhandenen Sicherheitsmechanismen wirklich?
 - **Redirects** -- Kann die App den Benutzer auf eine bösartige Seite umleiten?
-- **DOM Security** -- Werden Angulars Sicherheitsmechanismen korrekt genutzt -- oder umgangen?
+- **DOM Security** -- Ist alles, was im DOM steht, auch für den User bestimmt?
 
 ---
 
