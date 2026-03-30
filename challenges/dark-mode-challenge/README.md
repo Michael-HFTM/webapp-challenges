@@ -3,7 +3,7 @@
 **Kurstag:** 06 — SCSS & Angular Material Design
 **Typ:** In-Class Coding
 **Dauer:** 25 Min.
-**Format:** Einzelarbeit
+**Format:** Partnerarbeit (Pair Programming)
 
 ---
 
