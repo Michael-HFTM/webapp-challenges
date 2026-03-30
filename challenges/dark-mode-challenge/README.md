@@ -1,8 +1,8 @@
-# Dark Mode in 15 Minuten
+# Dark Mode in 25 Minuten
 
 **Kurstag:** 06 — SCSS & Angular Material Design
 **Typ:** In-Class Coding
-**Dauer:** 15 Min.
+**Dauer:** 25 Min.
 **Format:** Einzelarbeit
 
 ---
@@ -13,7 +13,7 @@ Du erhältst eine Angular-App mit einem funktionierenden **Light-Theme** (Angula
 
 ## Aufgabe
 
-Baue einen funktionierenden **Dark-Mode-Toggle** ein — in nur 15 Minuten!
+Baue einen funktionierenden **Dark-Mode-Toggle** ein — in nur 25 Minuten!
 
 ### Was du umsetzen musst
 

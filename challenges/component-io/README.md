@@ -2,7 +2,7 @@
 
 **Kurstag:** 04 — Components & Data Binding
 **Typ:** BugHunt (Warm-up)
-**Dauer:** 15 Min.
+**Dauer:** 30 Min.
 **Bugs:** 4 (3 Basis + 1 Experte)
 **Format:** Partnerarbeit, PR mit CodeGuardian-Review
 
