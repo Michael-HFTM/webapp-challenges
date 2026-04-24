@@ -42,8 +42,10 @@ function calculateTotalValue(items) {
 // 3. Produkt suchen & Rabatt (Gefahr von Runtime-Crash bei falscher ID)
 function applyDiscount(productId, discount) {
     const product = products.find(p => p.id === productId);
-    product.price -= discount;
-    console.log(`Neuer Preis für ${product.title}: ${product.price}`);
+    if (product) {
+        product.price -= discount;
+        console.log(`Neuer Preis für ${product.title}: ${product.price}`);
+    }
 }
 
 // 4. Kunden begrüssen
