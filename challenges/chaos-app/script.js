@@ -31,7 +31,10 @@ function getFinalPrice(product) {
 function calculateTotalValue(items) {
     let total = 0;
     items.forEach(item => {
-        total += item.price * item.stock;
+        if (item.stock != null) 
+            total += Number(item.price) * Number(item.stock);
+        else
+            total += Number(item.price);    
     });
     return total;
 }
