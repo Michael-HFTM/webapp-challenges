@@ -14,7 +14,7 @@ const shippingCosts = 10;
 
 const customers = [
     { id: 1, name: "Anna Müller", email: "anna@example.ch" },
-    { id: 2, firstName: "Beat Keller", email: "beat@example.ch" },
+    { id: 2, name: "Beat Keller", email: "beat@example.ch" },
     { id: 3, name: "Carla Rossi", email: "carla@example.ch" }
 ];
 
@@ -53,7 +53,7 @@ function printCustomerGreeting(customer) {
 
 // 5. Günstige Produkte filtern
 function getAffordableProducts(items, maxPrice) {
-    return items.filter(item => item.price <= maxPrice);
+    return items.filter(item => Number(item.price) <= Number(maxPrice));
 }
 
 // --- EXECUTION ---
