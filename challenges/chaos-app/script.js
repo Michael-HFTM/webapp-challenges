@@ -24,7 +24,7 @@ const specialOffers = null; // API-Aufruf fehlgeschlagen, gab null statt [] zur√
 
 // 1. Endpreis berechnen
 function getFinalPrice(product) {
-    return product.price + shippingCosts;
+    return Number(product.price) + shippingCosts;
 }
 
 // 2. Gesamtwert des Lagers
