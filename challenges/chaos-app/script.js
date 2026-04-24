@@ -53,7 +53,10 @@ function printCustomerGreeting(customer) {
 
 // 5. Günstige Produkte filtern
 function getAffordableProducts(items, maxPrice) {
-    return items.filter(item => Number(item.price) <= Number(maxPrice));
+    if (items)
+        return items.filter(item => Number(item.price) <= Number(maxPrice));
+    else
+        return "Angebote konnten nicht geladen werden."
 }
 
 // --- EXECUTION ---
