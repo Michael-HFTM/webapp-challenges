@@ -4,10 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
-import { MatBadgeModule } from '@angular/material/badge';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { EVENTS } from '../../data/mock-data';
-import { exportToCsv, downloadCsv } from '../../shared/export-utils';
 
 @Component({
   selector: 'app-home',
@@ -17,8 +14,6 @@ import { exportToCsv, downloadCsv } from '../../shared/export-utils';
     MatButtonModule,
     MatChipsModule,
     MatIconModule,
-    MatBadgeModule,
-    MatTooltipModule,
   ],
   template: `
     <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px">
@@ -60,7 +55,9 @@ import { exportToCsv, downloadCsv } from '../../shared/export-utils';
 export class HomeComponent {
   events = EVENTS;
 
-  onExport(): void {
+  async onExport(): Promise<void> {
+    const { exportToCsv, downloadCsv } = await import('../../shared/export-utils');
+
     const csv = exportToCsv(this.events);
     downloadCsv(csv, 'events.csv');
   }

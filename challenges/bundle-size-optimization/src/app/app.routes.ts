@@ -1,16 +1,40 @@
-import { Routes } from '@angular/router';
-import { HomeComponent } from './pages/home/home.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { SettingsComponent } from './pages/settings/settings.component';
-import { CreateEventComponent } from './pages/create-event/create-event.component';
-import { AboutComponent } from './pages/about/about.component';
-import { EventDetailComponent } from './pages/event-detail/event-detail.component';
+import {Routes} from '@angular/router';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'event/:id', component: EventDetailComponent },
-  { path: 'create', component: CreateEventComponent },
-  { path: 'dashboard', component: DashboardComponent },
-  { path: 'settings', component: SettingsComponent },
-  { path: 'about', component: AboutComponent },
+  {
+    path: '',
+    loadComponent: () =>
+        import('./pages/home/home.component')
+            .then(m => m.HomeComponent),
+  },
+  {
+    path: 'event/:id',
+    loadComponent: () =>
+        import('./pages/event-detail/event-detail.component')
+            .then(m => m.EventDetailComponent),
+  },
+  {
+    path: 'create',
+    loadComponent: () =>
+        import('./pages/create-event/create-event.component')
+            .then(m => m.CreateEventComponent),
+  },
+  {
+    path: 'dashboard',
+    loadComponent: () =>
+        import('./pages/dashboard/dashboard.component')
+            .then(m => m.DashboardComponent),
+  },
+  {
+    path: 'settings',
+    loadComponent: () =>
+        import('./pages/settings/settings.component')
+            .then(m => m.SettingsComponent),
+  },
+  {
+    path: 'about',
+    loadComponent: () =>
+        import('./pages/about/about.component')
+            .then(m => m.AboutComponent),
+  }
 ];
